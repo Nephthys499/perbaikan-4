@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.Homebage {
+  background-color: rgb(118, 167, 70);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: small;
+  padding: 20px;
+}
+
+.span1 {
+  font-size: small;
+  font-weight: bold;
+  color: rgb(135, 211, 59);
+}
+
+.logosekolahkarangjengkol {
+  height: 18vh;
+  width: 45vw;
+}
+button{
+  margin-top: 10px;
+}
+
+/* Adjustments for the login form */
+Form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+margin-top: 10px ;
+}
+
+Form.Group {
+  margin-bottom: 20px;
+}
+.form-label{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media only screen and (min-width: 600px) {
+  .logosekolahkarangjengkol {
+    height: 19vh;
+    width: 15vw;
+  }
+}

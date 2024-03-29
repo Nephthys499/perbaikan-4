@@ -1,0 +1,680 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+}
+
+link[rel="icon"] {
+  border-radius: 100%;
+}
+
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 7%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.kiri {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.kiri .text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 9rem;
+  text-align: center;
+  margin-right: 7rem;
+}
+.kiri .text h1 {
+  font-size: medium;
+}
+
+.kiri .navbar-logo1 {
+  height: 100%;
+  padding-right: 1rem;
+}
+.kiri .navbar-logo1 img {
+  width: 2rem;
+  height: 2.3rem;
+}
+.navbar1 .kiri .navbar-nav1 a {
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.navbar1 .navbar-extra1 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar1 .navbar-extra1 img {
+  width: 36px;
+  height: 52px;
+}
+.navbar1 .navbar-extra1 a {
+  padding: 0.5rem;
+  margin: 0.2rem;
+  color: #000000;
+  text-decoration: none;
+}
+.navbar1 .navbar-extra1 a:hover{
+text-decoration: underline;
+}
+
+.myswipercrosel {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-top: 7rem;
+  color: #000000;
+}
+.crousel-landing {
+  display: flex;
+  align-items: center;
+  margin: 3rem 3rem;
+}
+.title {
+  width: 100%;
+  height: auto;
+  margin-top: 33px;
+}
+.title img{
+  width: 100%;
+  height: auto;
+  
+}
+.s-box1 {
+  width: 20rem;
+  background-color: #d4e2ff;
+}
+.s-box1 .nama {
+  width: 18rem;
+  background-color: #ecf6fd;
+}
+.s-box2 {
+  width: 20rem;
+  background-color: #d4ffe1;
+}
+.s-box2 .nama {
+  width: 18rem;
+  background-color: #ecfff3;
+}
+.s-box3 {
+  width: 20rem;
+  background-color: #fff0ee;
+}
+.s-box3 .nama {
+  width: 18rem;
+  background-color: #ffdad4;
+}
+.s-box4 {
+  width: 20rem;
+  background-color: #faf4b8;
+}
+.s-box4 .nama {
+  width: 18rem;
+  background-color: #fcffcf;
+}
+.s-box5 {
+  width: 20rem;
+  background-color: #97e4fb;
+}
+.s-box5 .nama {
+  width: 18rem;
+  background-color: #caf2fe;
+}
+
+.box-1 {
+  width: 20rem;
+  background-color: #fce5a1;
+}
+.box-1 .nama {
+  width: 18rem;
+  background-color: #fbedc3;
+}
+.box-2 {
+  width: 20rem;
+  background-color: #feb4f4;
+}
+.box-2 .nama {
+  width: 18rem;
+  background-color: #f9daf5;
+}
+.box-3 {
+  width: 20rem;
+  background-color: #abf2fa;
+}
+.box-3 .nama {
+  width: 18rem;
+  background-color: #d3f6fa;
+}
+.box-4 {
+  width: 20rem;
+  background-color: #d8a2f9;
+}
+.box-4 .nama {
+  width: 18rem;
+  background-color: #e7c9fa;
+}
+.box-5 {
+  width: 20rem;
+  background-color: #f9a2d9;
+}
+.box-5 .nama {
+  width: 18rem;
+  background-color: #fbbde4;
+}
+/* Mapel */
+.contact h2 {
+  font-size: 2.5rem;
+  color: var(--third);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+/* menu mapel */
+.BarisMapel .container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.BarisMapel .container3 .mapel1 {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+border:2px solid #9c9898a2;;
+max-width: 25.4vw;
+padding-right: 0.1rem;
+overflow: hidden; /* Menghindari overflow gambar dari div */
+}
+.BarisMapel .container3 .mapel1 h2{
+  text-align: left;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+.BarisMapel .container3 .mapel1 p{
+  text-align:start;
+  margin-left: 0.5rem;
+}
+.BarisMapel .container3 .mapel1 .buttonGo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  width: 10vw;
+  height: 4vh;
+  background-color: rgba(160, 176, 252, 0.689);
+  color: #fff; /* Warna teks tombol */
+  border: none; /* Menghilangkan border */
+  cursor: pointer; 
+}
+.custom-container .contact .container3 .mapel1 .buttonGo a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+.BarisMapel .container3 .mapel1 .gambar img{
+width: 26.9vw; /* Gambar tidak boleh melebihi lebar div */
+height: 25vh;
+object-fit: cover;
+margin-left: -6.5px;
+}
+.BarisMapel .container3 .mapel1 .gambar{
+  max-width: 25.4vw;
+height: 25vh;
+}
+.BarisMapel .swiper {
+  max-width: 100%;
+  height: 70vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 10px;
+}
+
+.BarisMapel .mySwiper .swiper-slide {
+  max-width: 30vw;
+  max-height: 80vh;
+}
+
+
+@media (min-width: 1028px) {
+  .containerbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+    width: auto;
+    height: 50vh;
+  }
+  .containerleader {
+    width: 80vw;
+    height: 50vh;
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    align-items: center;
+    padding-top: 1rem;
+    border-radius: 10px;
+  }
+  .containerleader .orangkiri {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .containerleader .orangkanan {
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+
+    right: 0;
+    justify-content: end;
+  }
+  .containerleader .container2 {
+    border-radius: 15px;
+    justify-content: center;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .containerleader .container2 .nama {
+    display: flex;
+
+    height: 2.2rem;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  .containerleader .container2 .nama h1 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    line-height: normal;
+    color: #000000;
+    margin: 0;
+  }
+
+  .containerleader .orangkanan .container2 {
+    flex-direction: row-reverse;
+    align-items: center;
+    right: 0;
+  }
+  .containerleader .orangkanan .container2 .nama {
+    margin-right: 0rem;
+    margin-left: 0.2rem;
+    align-items: center;
+    display: flex;
+  }
+
+  .SwiperSlide img {
+    width: 80vw;
+    height: 20vh;
+  }
+  .swiper {
+    width: 200vw;
+    height: 50vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+  }
+
+  .mySwiper.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200vw;
+    height: 50vh;
+    border-radius: 15px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+  }
+}
+/* Adjust styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .navbar1 {
+    padding: 1.2rem 5%; /* Adjust padding for smaller screens */
+  }
+  .navbar1 .navbar-extra1 {
+    width: 12.5rem;
+  }
+  .kiri .text {
+    width: 9rem; /* Adjust the width for smaller screens */
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+
+  .kiri .text h1 {
+    font-size: medium; /* Adjust font size for smaller screens */
+    margin: 0;
+  }
+
+  .kiri .navbar-logo1 {
+    padding-right: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .kiri .navbar-logo1 img {
+    width: 1.5rem; /* Adjust logo size for smaller screens */
+    height: 1.8rem;
+  }
+
+  .navbar1 .navbar-extra1 img {
+    width: 28px; /* Adjust image size for smaller screens */
+    height: 40px;
+  }
+
+  .navbar1 .navbar-extra1 a {
+    padding: 0.3rem; /* Adjust padding for smaller screens */
+    margin: 0.1rem; /* Adjust margins for smaller screens */
+    color: #000000;
+  }
+
+  .containerbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5rem;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    width: auto;
+    height: 100vh;
+  }
+  .containerleader {
+    width: 80vw;
+    height: 50vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+  .containerleader .orangkiri {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1.3rem;
+  }
+  .containerleader .orangkanan {
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+
+    right: 0;
+    justify-content: end;
+  }
+  .containerleader .container2 {
+    border-radius: 15px;
+    justify-content: center;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .containerleader .container2 .nama {
+    display: flex;
+
+    height: 2.2rem;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  .containerleader .container2 .nama h1 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    line-height: normal;
+    color: #000000;
+    margin: 0;
+  }
+
+  .containerleader .orangkanan .container2 {
+    flex-direction: row-reverse;
+    align-items: center;
+    right: 0;
+  }
+  .containerleader .orangkanan .container2 .nama {
+    margin-right: 0rem;
+    margin-left: 0.2rem;
+    align-items: center;
+    display: flex;
+  }
+
+  .SwiperSlide img {
+    width: 80vw;
+    height: 20vh;
+  }
+  .swiper {
+    width: 80vw;
+    height: 20vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+  }
+
+  .mySwiper.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 80vw;
+    height: 20vh;
+    border-radius: 15px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+  }
+}
+
+/* ini yang aku tambah */
+.containerTambah {
+  width: auto;
+  height: auto;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tempat1,
+.tempat2,
+.tempat3,
+.tempat4,
+.tempat5,
+.tempat6,
+.tempat7,
+.tempat8,
+.tempat9,
+.tempat10 {
+  margin: 7px 0;
+  width: 500px;
+  height: 50px;
+  /*border: 4px solid red;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  /*border: 1px inset rgb(110, 148, 110), rgb(187, 187, 68);
+  */ /*border: 1pt inset green;
+    */
+}
+
+.badgeSiswa1,
+.badgeSiswa2,
+.badgeSiswa3,
+.badgeSiswa4,
+.badgeSiswa5,
+.badgeSiswa6,
+.badgeSiswa7,
+.badgeSiswa8,
+.badgeSiswa9,
+.badgeSiswa10 {
+  width: 12%;
+  height: auto;
+  /* border: 2px solid red; */
+  margin-left: -1rem;
+}
+.namaSiswa1,
+.namaSiswa2,
+.namaSiswa3,
+.namaSiswa4,
+.namaSiswa5,
+.namaSiswa6,
+.namaSiswa7,
+.namaSiswa8,
+.namaSiswa9,
+.namaSiswa10 {
+  /* border: 2px solid red; */
+  width: 350px;
+  height: 30px;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scoreMapel1,
+.scoreMapel2,
+.scoreMapel3,
+.scoreMapel4,
+.scoreMapel5,
+.scoreMapel6,
+.scoreMapel7,
+.scoreMapel8,
+.scoreMapel9,
+.scoreMapel10 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: 2px solid red;
+ */
+
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* ngecilin gambar */
+.badgeSiswa1 img,
+.badgeSiswa2 img,
+.badgeSiswa3 img,
+.badgeSiswa4 img,
+.badgeSiswa5 img,
+.badgeSiswa6 img,
+.badgeSiswa7 img,
+.badgeSiswa8 img,
+.badgeSiswa9 img,
+.badgeSiswa10 img {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid red; */
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/* INI BAGIAN COMPONENT MENU MAPEL */
+.mapelBanner {
+  width: 100vw;
+  height: 30vh;
+  /* border: 2px solid red; */
+  background-image: url(../assets/banerMapel.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.Container {
+  border: 2px solid red;
+}
+
+/* .Row,
+.Col {
+  border: 20px solid red;
+} */
+
+.mataPelajaranSekolah {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3rem 3rem;
+  border: 2px solid red;
+}
+
+.cardMapel1,
+.cardMapel2,
+.cardMapel3,
+.cardMapel4,
+.cardMapel5 {
+  margin: 1rem 1rem;
+  /* border: 2px solid red; */
+}
+
+/*  */
+/*  */
+/*  */
+/*  */

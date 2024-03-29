@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+  }
+  
+  link[rel="icon"] {
+    border-radius: 100%;
+  }
+  
+  .containerbox .title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerbox .title span{
+    color: #f45050;
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+  .containerbox .title h1{
+    color: #1e5754;
+  }
+  .s-box1 {
+    width: 20rem;
+    background-color: #d4e2ff;
+  }
+  .s-box1 .nama {
+    width: 18rem;
+    background-color: #ecf6fd;
+  }
+  .s-box2 {
+    width: 20rem;
+    background-color: #d4ffe1;
+  }
+  .s-box2 .nama {
+    width: 18rem;
+    background-color: #ecfff3;
+  }
+  .s-box3 {
+    width: 20rem;
+    background-color: #fff0ee;
+  }
+  .s-box3 .nama {
+    width: 18rem;
+    background-color: #ffdad4;
+  }
+  .s-box4 {
+    width: 20rem;
+    background-color: #faf4b8;
+  }
+  .s-box4 .nama {
+    width: 18rem;
+    background-color: #fcffcf;
+  }
+  .s-box5 {
+    width: 20rem;
+    background-color: #97e4fb;
+  }
+  .s-box5 .nama {
+    width: 18rem;
+    background-color: #caf2fe;
+  }
+
+  .box-1 {
+    width: 20rem;
+    background-color: #fce5a1;
+  }
+  .box-1 .nama {
+    width: 18rem;
+    background-color: #fbedc3;
+  }
+  .box-2 {
+    width: 20rem;
+    background-color: #feb4f4;
+  }
+  .box-2 .nama {
+    width: 18rem;
+    background-color: #f9daf5;
+  }
+  .box-3 {
+    width: 20rem;
+    background-color: #abf2fa;
+  }
+  .box-3 .nama {
+    width: 18rem;
+    background-color: #d3f6fa;
+  }
+  .box-4 {
+    width: 20rem;
+    background-color: #d8a2f9;
+  }
+  .box-4 .nama {
+    width: 18rem;
+    background-color: #e7c9fa;
+  }
+  .box-5 {
+    width: 20rem;
+    background-color: #f9a2d9;
+  }
+  .box-5 .nama {
+    width: 18rem;
+    background-color: #fbbde4;
+  }
+  /* Mapel */
+  .contact h2 {
+    font-size: 2.5rem;
+    color: var(--third);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact h2 span {
+    color: #1e5754;
+  }
+.contact .container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.contact .container1 .row {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.contact .container1 .row img {
+  border-radius: 100%;
+  width: 7rem;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  margin-top: 0.5rem;
+}
+
+  @media (min-width: 1028px) {
+    .containerbox{
+      display: flex;
+      justify-content: center;
+      margin-top: 6rem;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0.5rem;
+      width: auto;
+      height: 50vh;
+    }
+    .containerleader {
+      width: 80vw;
+      height: 50vh;
+  
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+      align-items: center;
+      padding-top: 1rem;
+      border-radius: 10px;
+    }
+    .containerleader .orangkiri {
+      flex-direction: column;
+      margin-left: 1rem;
+      margin-top: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .containerleader .orangkanan {
+      flex-direction: column;
+      margin-right: 1rem;
+      margin-top: 1.3rem;
+      margin-bottom: 1rem;
+      display: flex;
+  
+      right: 0;
+      justify-content: end;
+    }
+    .containerleader .container2 {
+      border-radius: 15px;
+  justify-content: center;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .containerleader .container2 .nama {
+      display: flex;
+  
+      height: 2.2rem;
+  
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+    
+    }
+    .containerleader .container2 .nama h1 {
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: oblique;
+      font-weight: 500;
+      line-height: normal;
+      color: #000000;
+      margin: 0;
+    }
+
+    .containerleader .orangkanan .container2 {
+      flex-direction: row-reverse;
+      align-items: center;
+      right: 0;
+    }
+    .containerleader .orangkanan .container2 .nama {
+      margin-right: 0rem;
+      margin-left: 0.2rem;
+      align-items: center;
+      display: flex;
+    }
+
+  
+
+    .SwiperSlide img {
+      width: 80vw;
+      height: 20vh;
+    }
+    .swiper {
+      width: 200vw;
+      height: 50vh;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      gap: 10px;
+    }
+    
+    .mySwiper.swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 200vw;
+      height: 50vh;
+      border-radius: 15px;
+    }
+    
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      border-radius: 15px;
+      height: 100%;
+    }
+  }
+  /* Adjust styles for tablets and smaller screens */
+  @media (max-width: 768px) {
+    .navbar1 {
+      padding: 1.2rem 5%; /* Adjust padding for smaller screens */
+    }
+    .navbar1 .navbar-extra1 {
+      width: 12.5rem;
+    }
+    .kiri .text {
+      width: 9rem; /* Adjust the width for smaller screens */
+      margin-right: 0; /* Remove right margin on smaller screens */
+    }
+  
+    .kiri .text h1 {
+      font-size: medium; /* Adjust font size for smaller screens */
+      margin: 0;
+    }
+  
+    .kiri .navbar-logo1 {
+      padding-right: 0.5rem; /* Adjust padding for smaller screens */
+    }
+  
+    .kiri .navbar-logo1 img {
+      width: 1.5rem; /* Adjust logo size for smaller screens */
+      height: 1.8rem;
+    }
+  
+    .navbar1 .navbar-extra1 img {
+      width: 28px; /* Adjust image size for smaller screens */
+      height: 40px;
+    }
+  
+    .navbar1 .navbar-extra1 a {
+      padding: 0.3rem; /* Adjust padding for smaller screens */
+      margin: 0.1rem; /* Adjust margins for smaller screens */
+      color: #000000;
+    }
+
+    .containerbox{
+      display: flex;
+      justify-content: center;
+      margin-top: 5.5rem;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 0.5rem;
+      width: auto;
+      height: 50vh;
+    }
+    .containerleader {
+      width: 80vw;
+      height: 50vh;
+  
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 1rem;
+      border-radius: 10px;
+      flex-direction: column;
+    }
+    .containerleader .orangkiri {
+      flex-direction: column;
+      margin-left: 1rem;
+      margin-top: 1.3rem;
+    
+    }
+    .containerleader .orangkanan {
+      flex-direction: column;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+  
+      right: 0;
+      justify-content: end;
+    }
+    .containerleader .container2 {
+      border-radius: 15px;
+  justify-content: center;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .containerleader .container2 .nama {
+      display: flex;
+  
+      height: 2.2rem;
+  
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+    
+    }
+    .containerleader .container2 .nama h1 {
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: oblique;
+      font-weight: 500;
+      line-height: normal;
+      color: #000000;
+      margin: 0;
+    }
+
+    .containerleader .orangkanan .container2 {
+      flex-direction: row-reverse;
+      align-items: center;
+      right: 0;
+    }
+    .containerleader .orangkanan .container2 .nama {
+      margin-right: 0rem;
+      margin-left: 0.2rem;
+      align-items: center;
+      display: flex;
+    }
+
+    .SwiperSlide img {
+      width: 80vw;
+      height: 20vh;
+    }
+    .swiper {
+      width: 80vw;
+      height: 20vh;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      gap: 10px;
+    }
+    
+    .mySwiper.swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 80vw;
+      height: 20vh;
+      border-radius: 15px;
+    }
+    
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      border-radius: 15px;
+      height: 100%;
+    }
+  }

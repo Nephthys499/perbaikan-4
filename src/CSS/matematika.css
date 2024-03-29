@@ -1,0 +1,403 @@
+/* Matematika.css */
+
+/* Container styles */
+.matematika-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+
+/* Title styles */
+.matematika-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Subtitle styles */
+.matematika-container h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: left;
+}
+
+/* Content styles */
+.matematika-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  text-align: left;
+}
+
+/* Quiz link styles */
+.matematika-container .quiz-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.matematika-container .quiz-item img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.matematika-container .quiz-item-details {
+  flex: 1;
+}
+
+.matematika-container .quiz-item-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.matematika-container .quiz-item-info {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Loading message styles */
+.matematika-container .matematika-loading-message {
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .matematika-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .matematika-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .matematika-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .matematika-container p {
+    font-size: 1rem;
+  }
+}
+
+.empatDua {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.empat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-image: url(../assets/cobabege.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 20px solid white; */
+}
+
+h1 {
+  text-align: center;
+}
+
+.gambar {
+  height: 5vh;
+  width: 5vw;
+}
+
+.gambarKKuis {
+  height: 100vh;
+  width: 100vw;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.kuis11 {
+  margin: 1rem 1rem;
+}
+
+/* testing */
+.boxPertama {
+  width: 30vw;
+  color: white;
+  height: 16vh;
+  display: flex;
+  background-color: rgba(92, 87, 87, 0.644);
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  /* border: 2px solid red; */
+}
+
+.kotakGambar {
+  width: 5vh;
+  width: 5vw;
+}
+
+.kotakText {
+  height: fit-content;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.pKuisTitle {
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------------- */
+/* hero section */
+
+/* judul materi testing */
+.judulHeadline {
+  height: 100vh;
+  /* background-image: url(../assets/backgroundSatu.jpg); */
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* border: 20px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headLine {
+  /* border: 2px solid purple; */
+  /* background-image: url("../assets/backgroundMatematika.png"); */
+  background-color: #87a922;
+  width: 70%;
+  height: 50%;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  /* border: 2px solid red; */
+}
+
+.loremLimaPuluh {
+  height: auto;
+  width: 50%;
+  color: white;
+  text-align: justify;
+}
+
+.materidataTitle {
+  /* border: 2px solid red; */
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+/* bagian bawah hero section */
+
+.childrenMateri {
+  /* border: 2px solid purple; */
+  display: flex;
+  width: 70%;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pChildTitikTitle {
+  /* border: 2px solid red; */
+  width: 10vw;
+  height: 10vh;
+}
+
+.gataulaPusing {
+  border: 2px solid white;
+}
+
+.divbatas {
+  height: 10%;
+}
+
+.subSib {
+  /* border: 2px solid red; */
+  /* background-image: url("../assets/backgroundMatematika.png"); */
+  background-color: #fcdc2a;
+  color: black;
+  border-radius: 40px;
+  margin-top: 3rem;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.haha {
+  /* border: 20px solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.buttonBagianbawah {
+  /* border: 2px solid red; */
+  margin-top: 3rem;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.judulKuis {
+  color: orange;
+  font-weight: bold;
+  font-size: 5rem;
+  /* -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: red; */
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.biaradaspasi {
+  height: 10vh;
+  width: 10%;
+  /* border: 2px solid red; */
+}
+
+/* media quaries -------- */
+/* ================================== */
+/* ---------------- */
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loremLimaPuluh {
+    display: flex;
+    text-align: justify;
+    height: 55%;
+    width: 80%;
+    color: white;
+    /* margin-top: -4rem; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .materidataTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cobaTom {
+    height: 5vh;
+    width: 35vw;
+    margin-top: -2rem;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {
+  .subSib {
+    border: 2px solid red;
+    background-image: url("../assets/backgroundMatematika.png");
+    color: white;
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+  .butSubsib {
+    width: 60%;
+    height: 20%;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .boxPertama {
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(92, 87, 87);
+    margin: 1rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .kotakText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
