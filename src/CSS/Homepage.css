@@ -37,7 +37,7 @@
   height: 18vh;
   width: 45vw;
 }
-button{
+button {
   margin-top: 10px;
 }
 
@@ -46,13 +46,13 @@ Form {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-margin-top: 10px ;
+  margin-top: 10px;
 }
 
 Form.Group {
   margin-bottom: 20px;
 }
-.form-label{
+.form-label {
   display: flex;
   justify-content: flex-start;
   padding-top: 0.5rem;
@@ -65,3 +65,159 @@ Form.Group {
     width: 15vw;
   }
 }
+
+/* ................. */
+/* Menumapel  */
+/* ------------------------------------------------- */
+/* mapel matatematika */
+.mapelMath {
+  height: 35vh;
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../assets/math6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.pembungkusMath {
+  /* border: 2px solid red; */
+  height: auto;
+  width: 100%;
+  margin: 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.822);
+  padding: 0 2rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+/* baris */
+.barisPertama {
+  padding: 1rem 0;
+  /* padding-top: 1rem; */
+}
+
+.JudulMapel {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  /* margin-top: 1rem; */
+}
+
+.kolomPertama {
+  /* border: 2px solid red; */
+  /* width: 70%; */
+  /* margin: 1rem; */
+}
+
+.kolomKedua {
+  /* border: 2px solid red; */
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tombolMath {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3vw;
+  height: 5vh;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.desc {
+  /* border: 2px solid red; */
+}
+/* --------------------------------------------------------------------- */
+/* akhir mapel matematika */
+
+/* ganti gambar mapel */
+.mapelIPA {
+  height: 35vh;
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../assets/ipa8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.mapelIPS {
+  height: 35vh;
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../assets/ips5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.mapelBahasa {
+  height: 35vh;
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../assets/bi5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.mapelPKN {
+  height: 35vh;
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(../assets/pkn5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+/* media quary */
+/* @media only screen and (max-width: 1500px) {
+  .mapelMath {
+    height: 30vh;
+    width: 20vw;
+    border: 2px solid black;
+  }
+} */

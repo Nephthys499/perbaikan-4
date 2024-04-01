@@ -80,8 +80,8 @@ link[rel="icon"] {
   color: #000000;
   text-decoration: none;
 }
-.navbar1 .navbar-extra1 a:hover{
-text-decoration: underline;
+.navbar1 .navbar-extra1 a:hover {
+  text-decoration: underline;
 }
 
 .myswipercrosel {
@@ -101,10 +101,9 @@ text-decoration: underline;
   height: auto;
   margin-top: 33px;
 }
-.title img{
+.title img {
   width: 100%;
   height: auto;
-  
 }
 .s-box1 {
   width: 20rem;
@@ -203,26 +202,26 @@ text-decoration: underline;
   margin-top: 3rem;
 }
 .BarisMapel .container3 .mapel1 {
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-border:2px solid #9c9898a2;;
-max-width: 25.4vw;
-padding-right: 0.1rem;
-overflow: hidden; /* Menghindari overflow gambar dari div */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #9c9898a2;
+  max-width: 25.4vw;
+  padding-right: 0.1rem;
+  overflow: hidden; /* Menghindari overflow gambar dari div */
 }
-.BarisMapel .container3 .mapel1 h2{
+.BarisMapel .container3 .mapel1 h2 {
   text-align: left;
   margin-bottom: 0.7rem;
   font-size: 1.5rem;
   margin-left: 0.5rem;
 }
-.BarisMapel .container3 .mapel1 p{
-  text-align:start;
+.BarisMapel .container3 .mapel1 p {
+  text-align: start;
   margin-left: 0.5rem;
 }
-.BarisMapel .container3 .mapel1 .buttonGo{
+.BarisMapel .container3 .mapel1 .buttonGo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,21 +232,21 @@ overflow: hidden; /* Menghindari overflow gambar dari div */
   background-color: rgba(160, 176, 252, 0.689);
   color: #fff; /* Warna teks tombol */
   border: none; /* Menghilangkan border */
-  cursor: pointer; 
+  cursor: pointer;
 }
 .custom-container .contact .container3 .mapel1 .buttonGo a {
   text-decoration: none !important;
   color: #fff !important;
 }
-.BarisMapel .container3 .mapel1 .gambar img{
-width: 26.9vw; /* Gambar tidak boleh melebihi lebar div */
-height: 25vh;
-object-fit: cover;
-margin-left: -6.5px;
+.BarisMapel .container3 .mapel1 .gambar img {
+  width: 26.9vw; /* Gambar tidak boleh melebihi lebar div */
+  height: 25vh;
+  object-fit: cover;
+  margin-left: -6.5px;
 }
-.BarisMapel .container3 .mapel1 .gambar{
+.BarisMapel .container3 .mapel1 .gambar {
   max-width: 25.4vw;
-height: 25vh;
+  height: 25vh;
 }
 .BarisMapel .swiper {
   max-width: 100%;
@@ -261,7 +260,6 @@ height: 25vh;
   max-width: 30vw;
   max-height: 80vh;
 }
-
 
 @media (min-width: 1028px) {
   .containerbox {
@@ -640,7 +638,6 @@ height: 25vh;
 .mapelBanner {
   width: 100vw;
   height: 30vh;
-  /* border: 2px solid red; */
   background-image: url(../assets/banerMapel.jpg);
   background-size: cover;
   background-position: center center;
@@ -678,3 +675,7 @@ height: 25vh;
 /*  */
 /*  */
 /*  */
+
+.mapel1 {
+  border: 20px solid red;
+}

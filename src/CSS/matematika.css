@@ -189,22 +189,25 @@ h1 {
 }
 
 .headLine {
-  /* border: 2px solid purple; */
-  /* background-image: url("../assets/backgroundMatematika.png"); */
+  /*border: 2px solid purple;
+  */ /*background-image: url("../assets/backgroundMatematika.png");
+  */
   background-color: #87a922;
   width: 70%;
   height: 50%;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+  border-radius: 50px 150px;
+  -webkit-border-radius: 50px 150px;
+  -moz-border-radius: 50px 150px;
+  -ms-border-radius: 50px 150px;
+  -o-border-radius: 50px 150px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-
-  /* border: 2px solid red; */
+  box-shadow: 5.3px 6.3px 2.2px rgba(0, 0, 0, 0.02), 12.8px 15px 5.3px rgba(0, 0, 0, 0.028), 24.2px 28.3px 10px rgba(0, 0, 0, 0.035), 43.1px 50.5px 17.9px rgba(0, 0, 0, 0.042), 80.6px 94.4px 33.4px rgba(0, 0, 0, 0.05),
+    193px 226px 80px rgba(0, 0, 0, 0.07);
+  /*border: 2px solid red;
+  */
 }
 
 .loremLimaPuluh {
@@ -248,11 +251,11 @@ h1 {
 }
 
 .subSib {
-  /* border: 2px solid red; */
-  /* background-image: url("../assets/backgroundMatematika.png"); */
+  /*border: 2px solid red;
+  */ /*background-image: url("../assets/backgroundMatematika.png");
+  */
   background-color: #fcdc2a;
   color: black;
-  border-radius: 40px;
   margin-top: 3rem;
   height: 100%;
   width: 50%;
@@ -260,10 +263,13 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+  box-shadow: 5.3px 6.3px 2.2px rgba(0, 0, 0, 0.02), 12.8px 15px 5.3px rgba(0, 0, 0, 0.028), 24.2px 28.3px 10px rgba(0, 0, 0, 0.035), 43.1px 50.5px 17.9px rgba(0, 0, 0, 0.042), 80.6px 94.4px 33.4px rgba(0, 0, 0, 0.05),
+    193px 226px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 50px 150px;
+  -webkit-border-radius: 50px 150px;
+  -moz-border-radius: 50px 150px;
+  -ms-border-radius: 50px 150px;
+  -o-border-radius: 50px 150px;
 }
 
 .haha {
@@ -307,24 +313,38 @@ h1 {
 /* media quaries -------- */
 /* ================================== */
 /* ---------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
   * {
     font-size: 10px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
+  .loremLimaPuluh {
+    display: flex;
+    text-align: justify;
+    height: 55%;
+    width: 50%;
+    color: white;
+    font-size: 16px;
+    /* margin-top: -4rem; */
+    /* border: 2px solid red; */
+  }
+}
+@media only screen and (max-width: 1000px) {
   .loremLimaPuluh {
     display: flex;
     text-align: justify;
     height: 55%;
     width: 80%;
     color: white;
+    font-size: 10px;
     /* margin-top: -4rem; */
+    /* border: 2px solid red; */
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
   .materidataTitle {
     display: flex;
     justify-content: center;
@@ -338,7 +358,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
   .cobaTom {
     height: 5vh;
     width: 35vw;
@@ -364,7 +384,7 @@ h1 {
   }
 } */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
   .butSubsib {
     width: 60%;
     height: 20%;
@@ -372,6 +392,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid red; */
   }
 }
 
@@ -393,11 +414,24 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
   .kotakText {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .haha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .subSib {
+    width: 70%;
   }
 }
