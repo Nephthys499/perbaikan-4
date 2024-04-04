@@ -1,0 +1,207 @@
+.tambah-user-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+.tambahUser{
+  display: flex;
+  justify-content:space-around;
+  
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  margin-top: 20px;
+  color: #21de60;
+}
+
+/* hapus user */
+/* HapusUser.css */
+
+.hapus-user-container {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 2rem;
+}
+
+.hapus-user-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hapus-user-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hapus-user-container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hapus-user-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hapus-user-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.hapus-user-container p {
+  margin-bottom: 10px;
+}
+/* hapus user end */
+
+/****************************************************************************/
+
+/* Container untuk seluruh halaman */
+.tambah-kuis-container {
+  display: flex;
+}
+
+/* Konten utama */
+.tambah-kuis-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Container untuk setiap pertanyaan */
+.question-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Container untuk setiap pilihan jawaban */
+.choice-container {
+  margin-bottom: 10px;
+}
+
+/* Stil label */
+.question-container label,
+.choice-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Stil input untuk pertanyaan */
+.question-container input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Stil input untuk pilihan jawaban */
+.choice-container input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Stil input untuk checkbox */
+.choice-container input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Tombol untuk menambahkan pilihan jawaban */
+.add-choice-button,
+.add-question-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 1rem;
+}
+.submit-button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #04AA6D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.remove-question-button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e61111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 1rem;
+}
+
+.add-choice-button:hover,
+.add-question-button:hover {
+  background-color: #0056b3;
+}
+.submit-button:hover {
+  background-color: #058d5b;
+}
+.remove-question-button:hover {
+  background-color: #a50d0d;
+}
+/* tambah kuis end */

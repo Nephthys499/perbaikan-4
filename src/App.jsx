@@ -15,8 +15,11 @@ import IpsPage from "./pages/IpsPage";
 import PknPage from "./pages/PknPage";
 import BahasaPage from "./pages/BahasaPage";
 import tambahUser from "./pages/tambahUser";
-import tambahKuis from "./components/tambahKuis";
-import hapusUser from "./pages/hapusUser";
+import tambahKuis from "./pages/tambahKuis";
+import tambahMateri from "./pages/tambahMateri";
+import LoginAdmin from "./pages/LoginAdmin.jsx";
+import About from "./pages/AboutPage.jsx";
+
 function App() {
   return (
     <div>
@@ -34,7 +37,9 @@ function App() {
         <Route path="/Bahasa" Component={BahasaPage} />
         <Route path="/Tambah" Component={tambahUser} />
         <Route path="/TambahKuis" Component={tambahKuis} />
-        <Route path="/Hapus" Component={hapusUser} />
+        <Route path="/TambahMateri" Component={tambahMateri} />
+        <Route path="/LoginAdmin" Component={LoginAdmin} />
+        <Route path="/About" Component={About} />
       </Routes>
     </div>
   );

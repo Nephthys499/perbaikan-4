@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Hapus from "../components/hapusUser.jsx";
+import Navbar from "../components/Navbar.jsx";
+import "../CSS/TambahUser.css";
 
 const TambahUser = () => {
   const [newUser, setNewUser] = useState({
@@ -44,40 +47,53 @@ const TambahUser = () => {
   };
 
   return (
-    <div>
-      <h2>Add User</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          NIK:
-          <input
-            type="text"
-            value={newUser.NIK}
-            onChange={e => setNewUser({ ...newUser, NIK: e.target.value })}
-          />
-        </label>
+    <div className="tambahUser">
+      <Navbar />
+      <div className="tambah-user-container">
+        <h2>Add User</h2>
+        <form onSubmit={handleSubmit} className="user-form">
+          <label className="form-label">
+            NIK
+            <input
+              type="text"
+              value={newUser.NIK}
+              onChange={e => setNewUser({ ...newUser, NIK: e.target.value })}
+            />
+          </label>
 
-        <label>
-          Full Name:
-          <input
-            type="text"
-            value={newUser.FullName}
-            onChange={e => setNewUser({ ...newUser, FullName: e.target.value })}
-          />
-        </label>
+          <label className="form-label">
+            Full Name
+            <input
+              type="text"
+              value={newUser.FullName}
+              onChange={e =>
+                setNewUser({ ...newUser, FullName: e.target.value })
+              }
+            />
+          </label>
 
-        <label>
-          Password:
-          <input
-            type="password"
-            value={newUser.Password}
-            onChange={e => setNewUser({ ...newUser, Password: e.target.value })}
-          />
-        </label>
+          <label className="form-label">
+            Password
+            <input
+              type="password"
+              value={newUser.Password}
+              onChange={e =>
+                setNewUser({ ...newUser, Password: e.target.value })
+              }
+            />
+          </label>
 
-        <button type="submit">Add User</button>
-      </form>
+          <button type="submit" className="submit-button">
+            Add User
+          </button>
+        </form>
 
-      {message && <p>{message}</p>}
+        {message && <p className="error-message">{message}</p>}
+      </div>
+      <br />
+      <br />
+      <br />
+      <Hapus />
     </div>
   );
 };

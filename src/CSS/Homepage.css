@@ -113,11 +113,11 @@ Form.Group {
   /* margin-top: 1rem; */
 }
 
-.kolomPertama {
+/* .kolomPertama { */
   /* border: 2px solid red; */
   /* width: 70%; */
   /* margin: 1rem; */
-}
+/* } */
 
 .kolomKedua {
   /* border: 2px solid red; */
@@ -141,9 +141,9 @@ Form.Group {
   -o-border-radius: 15px;
 }
 
-.desc {
+/* .desc {
   /* border: 2px solid red; */
-}
+/* } */ 
 /* --------------------------------------------------------------------- */
 /* akhir mapel matematika */
 

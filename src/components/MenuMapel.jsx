@@ -19,6 +19,10 @@ import "../CSS/Homepage.css";
 // css Menu mapel ada di homepage.css
 
 const MenuMapel = () => {
+  const navigateTo = path => {
+    window.location.href = path;
+  };
+
   return (
     <Container fluid className="custom-container">
       <Row>
@@ -42,10 +46,18 @@ const MenuMapel = () => {
                   <Row className="barisPertama">
                     <Col xs={10} className="kolomPertama">
                       <p className="JudulMapel">Matematika</p>
-                      <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cum?</div>
+                      <div className="desc">
+                        Jelajahi dunia ajaib matematika, temukan keasyikan di
+                        balik angka-angka dan pola-pola yang menyenangkan!
+                      </div>
                     </Col>
                     <Col className="kolomKedua">
-                      <button className="tombolMath">GO</button>
+                      <button
+                        className="tombolMath"
+                        onClick={() => navigateTo("/Matematika")}
+                      >
+                        GO
+                      </button>
                     </Col>
                   </Row>
                 </div>
@@ -58,10 +70,18 @@ const MenuMapel = () => {
                   <Row className="barisPertama">
                     <Col xs={10} className="kolomPertama">
                       <p className="JudulMapel">IPA</p>
-                      <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cum?</div>
+                      <div className="desc">
+                        Sains selalu begitu menyenangkan! Temukan keajaiban alam
+                        dan pelajari rahasia dunia bersama IPA.
+                      </div>
                     </Col>
                     <Col className="kolomKedua">
-                      <button className="tombolMath">GO</button>
+                      <button
+                        className="tombolMath"
+                        onClick={() => navigateTo("/Ipa")}
+                      >
+                        GO
+                      </button>
                     </Col>
                   </Row>
                 </div>
@@ -74,10 +94,18 @@ const MenuMapel = () => {
                   <Row className="barisPertama">
                     <Col xs={10} className="kolomPertama">
                       <p className="JudulMapel">IPS</p>
-                      <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cum?</div>
+                      <div className="desc">
+                        Jelajahi keberagaman budaya dan belajar tentang
+                        masyarakat dan lingkungan di sekitar kita bersama IPS.
+                      </div>
                     </Col>
                     <Col className="kolomKedua">
-                      <button className="tombolMath">GO</button>
+                      <button
+                        className="tombolMath"
+                        onClick={() => navigateTo("/Ips")}
+                      >
+                        GO
+                      </button>
                     </Col>
                   </Row>
                 </div>
@@ -90,10 +118,18 @@ const MenuMapel = () => {
                   <Row className="barisPertama">
                     <Col xs={10} className="kolomPertama">
                       <p className="JudulMapel">Bahasa Indonesia</p>
-                      <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cum?</div>
+                      <div className="desc">
+                        Jelajahi keindahan bahasa Indonesia, ekspresikan dirimu
+                        dengan kata-kata, cerita, dan puisi yang indah.
+                      </div>
                     </Col>
                     <Col className="kolomKedua">
-                      <button className="tombolMath">GO</button>
+                      <button
+                        className="tombolMath"
+                        onClick={() => navigateTo("/Bahasa")}
+                      >
+                        GO
+                      </button>
                     </Col>
                   </Row>
                 </div>
@@ -106,10 +142,18 @@ const MenuMapel = () => {
                   <Row className="barisPertama">
                     <Col xs={10} className="kolomPertama">
                       <p className="JudulMapel">PKN</p>
-                      <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cum?</div>
+                      <div className="desc">
+                        Pelajari kewarganegaraan dan menjadi warga yang baik,
+                        pahami hak dan kewajibanmu bersama PKN.
+                      </div>
                     </Col>
                     <Col className="kolomKedua">
-                      <button className="tombolMath">GO</button>
+                      <button
+                        className="tombolMath"
+                        onClick={() => navigateTo("/Pkn")}
+                      >
+                        GO
+                      </button>
                     </Col>
                   </Row>
                 </div>

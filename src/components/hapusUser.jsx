@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../CSS/TambahUser.css"; // Import file CSS untuk komponen HapusUser
 
 const HapusUser = () => {
   const [users, setUsers] = useState([]);
@@ -81,7 +82,9 @@ const HapusUser = () => {
   };
 
   return (
-    <div>
+    <div className="hapus-user-container">
+      {" "}
+      {/* Menggunakan className untuk menamai div */}
       <h2>Delete User</h2>
       <label>
         Select User to Delete:
@@ -97,7 +100,6 @@ const HapusUser = () => {
           ))}
         </select>
       </label>
-
       {selectedUserId && (
         <div>
           <p>Selected User Information:</p>
@@ -107,11 +109,9 @@ const HapusUser = () => {
           <p>Password: {selectedUser.Password}</p>
         </div>
       )}
-
       <button onClick={handleDeleteUser} disabled={!selectedUserId}>
         Delete User
       </button>
-
       {message && <p>{message}</p>}
     </div>
   );

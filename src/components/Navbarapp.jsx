@@ -16,7 +16,7 @@ const Navbarapp = () => {
       <div className="navbar-extra1">
         <a href="/Kelas">beranda</a>
         <img src={logo2} alt="" />
-        <a href="#Menu">About Us</a>
+        <a href="/About">About Us</a>
       </div>
     </nav>
   );
