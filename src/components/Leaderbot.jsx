@@ -33,20 +33,21 @@ const Leaderbot = () => {
       </div>
       <br />
       <div className="containerTambah">
+        {/* Tambahkan baris keterangan di sini */}
+        <div className="keterangan">
+          <div>Rank</div>
+          <div>Nama</div>
+          <div>Score</div>
+        </div>
+        {/* Tampilkan data leaderboard */}
         {leaderboardData.map((item, index) => (
           <div className={`tempat${index + 1}`} key={index}>
             <div className={`badgeSiswa${index + 1}`}>
               {index === 0 && <img src={rank1} alt="" />}
               {index === 1 && <img src={rank2} alt="" />}
               {index === 2 && <img src={rank3} alt="" />}
-              {index == 3 && <img src={rank} alt="" />}
-              {index == 4 && <img src={rank} alt="" />}
-              {index == 5 && <img src={rank} alt="" />}
-              {index == 6 && <img src={rank} alt="" />}
-              {index == 7 && <img src={rank} alt="" />}
-              {index == 8 && <img src={rank} alt="" />}
-              {index == 9 && <img src={rank} alt="" />}
-              {index == 10 && <img src={rank} alt="" />}
+              {/* Tambahkan gambar untuk peringkat selanjutnya jika diperlukan */}
+              {index >= 3 && <img src={rank} alt="" />}
             </div>
             <div className={`namaSiswa${index + 1}`}>{item.CreatedBy}</div>
             <div className={`scoreMapel${index + 1}`}>{item.TotalScore}</div>

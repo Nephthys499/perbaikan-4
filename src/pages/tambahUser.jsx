@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Hapus from "../components/hapusUser.jsx";
-import Navbar from "../components/Navbar.jsx";
+
 import "../CSS/TambahUser.css";
 
 const TambahUser = () => {
   const [newUser, setNewUser] = useState({
-    NIK: "",
+    NISN: "",
     FullName: "",
     Password: "",
+    IsAdmin: false, // Tambahkan state untuk isAdmin dengan nilai awal false
   });
 
   const [message, setMessage] = useState("");
@@ -25,9 +26,10 @@ const TambahUser = () => {
         },
         body: JSON.stringify({
           mode: "CREATE",
-          NIK: newUser.NIK,
+          NISN: newUser.NISN,
           FullName: newUser.FullName,
           Password: newUser.Password,
+          IsAdmin: newUser.IsAdmin, // Sertakan nilai isAdmin dalam data yang dikirim
         }),
       });
 
@@ -48,16 +50,15 @@ const TambahUser = () => {
 
   return (
     <div className="tambahUser">
-      <Navbar />
       <div className="tambah-user-container">
         <h2>Add User</h2>
         <form onSubmit={handleSubmit} className="user-form">
           <label className="form-label">
-            NIK
+            NISN
             <input
               type="text"
-              value={newUser.NIK}
-              onChange={e => setNewUser({ ...newUser, NIK: e.target.value })}
+              value={newUser.NISN}
+              onChange={e => setNewUser({ ...newUser, NISN: e.target.value })}
             />
           </label>
 
@@ -79,6 +80,18 @@ const TambahUser = () => {
               value={newUser.Password}
               onChange={e =>
                 setNewUser({ ...newUser, Password: e.target.value })
+              }
+            />
+          </label>
+
+          <label className="form-label">
+            Guru :{" "}
+            {/* Tambahkan opsi ceklis untuk menentukan apakah pengguna adalah admin */}
+            <input
+              type="checkbox"
+              checked={newUser.IsAdmin}
+              onChange={e =>
+                setNewUser({ ...newUser, IsAdmin: e.target.checked })
               }
             />
           </label>

@@ -4,11 +4,11 @@ import logosekolah from "../assets/logo562.png";
 import { Button, Form } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import Cookies from "js-cookie"; // Tambahkan ini
 const HomePage = () => {
   const [loginData, setLoginData] = useState(null);
 
-  const submitData = async (event) => {
+  const submitData = async event => {
     event.preventDefault(); // Mencegah pengiriman formulir secara default
 
     try {
@@ -32,7 +32,17 @@ const HomePage = () => {
           // Login berhasil, sesuaikan tindakan Anda di sini
           setLoginData(data.body);
           console.log("Login berhasil");
+          Cookies.set("username", username);
+
+          if (data.body.IsAdmin) {
+            window.location.href = "/Tambah";
+            return;
+          }
+
           window.location.href = "/kelas";
+
+          console.log("Login User");
+          console.log(data);
         } else {
           // Login gagal, sesuaikan tindakan Anda di sini
           toast.error("Kata sandi yang kamu masukkan salah, coba lagi yah :)");
@@ -66,7 +76,10 @@ const HomePage = () => {
             <Form.Label>Password</Form.Label>
             <Form.Control type="password" placeholder="Password" />
             <br />
-            <Form.Text className="text-muted">Isi dengan teliti ya adik adik! jika ada kesalahan tanyakan pada Bapak/Ibu Guru</Form.Text>
+            <Form.Text className="text-muted">
+              Isi dengan teliti ya adik adik! jika ada kesalahan tanyakan pada
+              Bapak/Ibu Guru
+            </Form.Text>
           </Form.Group>
 
           <Button variant="primary" type="submit">

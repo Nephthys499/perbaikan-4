@@ -1,4 +1,4 @@
-import Logosd from "../assets/Logosd.jpg";
+import Logosd from "../assets/logo562.png";
 import logo2 from "../assets/logo2.png";
 
 const Navbarapp = () => {

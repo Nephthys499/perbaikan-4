@@ -1,16 +1,18 @@
-// KuisPage.js
-
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "../CSS/Kuis.css";
+import Cookies from "js-cookie"; // Tambahkan ini
 
 const KuisPage = () => {
   const [quizData, setQuizData] = useState(null);
   const [selectedOptions, setSelectedOptions] = useState({});
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const { quizId } = useParams();
+  const [username, setUsername] = useState(""); // Tambahkan ini
 
   useEffect(() => {
+    setUsername(Cookies.get("username")); // Ambil username dari cookies
+
     const fetchQuizData = async () => {
       try {
         const response = await fetch(
@@ -18,7 +20,6 @@ const KuisPage = () => {
         );
         const data = await response.json();
         setQuizData(data.body[0]);
-        console.log(data.body[0]);
       } catch (error) {
         console.error("Error fetching quiz data:", error);
       }
@@ -56,13 +57,7 @@ const KuisPage = () => {
       TimeLimit: quizData.TimeLimit,
       finishedTime: quizData.finishedTime,
       quizQuestions: quizData.quizQuestions.map(question => {
-        const selectedOption = document.querySelector(
-          `input[name="question_${question.Id}"]:checked`
-        );
-
-        const selectedOptionId = selectedOption
-          ? parseInt(selectedOption.value, 10)
-          : null;
+        const selectedOptionId = selectedOptions[question.Id] || null;
 
         const isCorrect = question.quizQuestionDetails.every(option => {
           return option.IsAnswer === (option.Id === selectedOptionId);
@@ -83,23 +78,28 @@ const KuisPage = () => {
       }),
     };
 
-    console.log(formData);
-
     try {
       const response = await fetch("http://localhost:3000/quiz/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          username: username, // Sertakan username dalam header
         },
         body: JSON.stringify(formData),
       });
 
-      console.log("Submit response:", response);
-      // You can add any additional logic you need after submission here
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("Quiz submitted successfully!");
+        window.location.href = "/Kelas";
+      } else {
+        alert(`Failed to submit quiz: ${result.message}`);
+      }
     } catch (error) {
       console.error("Error submitting quiz:", error);
+      alert("Error submitting quiz. Please try again.");
     }
-    window.location.href = "/Kelas";
   };
 
   return (

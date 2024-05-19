@@ -54,8 +54,8 @@ link[rel="icon"] {
   padding-right: 1rem;
 }
 .kiri .navbar-logo1 img {
-  width: 2rem;
-  height: 2.3rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 .navbar1 .kiri .navbar-nav1 a {
   display: inline-block;
@@ -523,6 +523,19 @@ link[rel="icon"] {
   align-items: center;
   flex-direction: column;
 }
+.keterangan {
+  display: flex;
+  justify-content: space-around;
+  width: 590px; /* Sesuaikan lebar dengan lebar tempat leaderboard */
+  margin-bottom: 10px; /* Beri jarak antara keterangan dan data leaderboard */
+  font-weight: bold; /* Tambahkan ketebalan pada teks */
+}
+
+.keterangan > div {
+  width: 40%; /* Bagi lebar secara merata */
+  text-align: center; /* Tengahkan teks */
+}
+
 
 .tempat1,
 .tempat2,

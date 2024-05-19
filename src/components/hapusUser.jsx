@@ -6,7 +6,7 @@ const HapusUser = () => {
   const [selectedUserId, setSelectedUserId] = useState("");
   const [selectedUser, setSelectedUser] = useState({
     UserId: "",
-    NIK: "",
+    NISN: "",
     FullName: "",
     Password: "",
   });
@@ -38,7 +38,7 @@ const HapusUser = () => {
     const selectedUser = users.find(user => user.UserId === parseInt(userId));
     setSelectedUserId(userId);
     setSelectedUser(
-      selectedUser || { UserId: "", NIK: "", FullName: "", Password: "" }
+      selectedUser || { UserId: "", NISN: "", FullName: "", Password: "" }
     );
   };
 
@@ -52,7 +52,7 @@ const HapusUser = () => {
         body: JSON.stringify({
           mode: "DELETE",
           UserId: selectedUser.UserId,
-          NIK: selectedUser.NIK,
+          NISN: selectedUser.NISN,
           FullName: selectedUser.FullName,
           Password: selectedUser.Password,
         }),
@@ -66,7 +66,7 @@ const HapusUser = () => {
         setSelectedUserId(""); // Reset selected user after deletion
         setSelectedUser({
           UserId: "",
-          NIK: "",
+          NISN: "",
           FullName: "",
           Password: "",
         });
@@ -104,7 +104,7 @@ const HapusUser = () => {
         <div>
           <p>Selected User Information:</p>
           <p>User ID: {selectedUser.UserId}</p>
-          <p>NIK: {selectedUser.NIK}</p>
+          <p>NISN: {selectedUser.NISN}</p>
           <p>Full Name: {selectedUser.FullName}</p>
           <p>Password: {selectedUser.Password}</p>
         </div>

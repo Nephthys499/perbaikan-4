@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-
+import "../CSS/TambahUser.css";
+import Hapus from "../components/HapusMateri.jsx";
 import trashIcon from "../assets/trash.png";
 
 const TambahMateri = () => {
@@ -57,7 +58,7 @@ const TambahMateri = () => {
         setNewMateri({
           ...newMateri,
           mode: "UPDATE",
-          ParentMateriId: selectedParentSubject.Id,
+          ParentMateriId: selectedParentSubject.ParentMateriId,
           Name: selectedParentSubject.Name,
           Title: selectedParentSubject.Title,
           Id: selectedParentSubject.Id,
@@ -83,10 +84,7 @@ const TambahMateri = () => {
 
       const formData = new FormData();
       formData.append("mode", newMateri.mode);
-      formData.append(
-        "ParentMateriId",
-        newMateri.ParentMateriId ? newMateri.ParentMateriId : null
-      );
+      formData.append("ParentMateriId", newMateri.ParentMateriId);
       formData.append("Name", newMateri.Name);
       formData.append("Title", newMateri.Title);
       formData.append("Id", newMateri.Id);
@@ -101,6 +99,13 @@ const TambahMateri = () => {
         formData.append(`subMateries[${index}].Title`, subMateri.Title);
         formData.append(`subMateries[${index}].file`, subMateri.file);
       });
+      var data = {};
+      formData.forEach(function (value, key) {
+        data[key] = value;
+      });
+
+      // Log the form data
+      console.log("Form Data:", data);
 
       const response = await fetch(
         "http://localhost:3000/materi/admin/submit",
@@ -182,7 +187,7 @@ const TambahMateri = () => {
     <div className="tambah-materi-container">
       <Navbar />
       <div className="tambah-materi-content">
-        <h2>Add Material</h2>
+        <h2>Add Materi</h2>
         <form onSubmit={handleSubmit}>
           <label>
             Parent Subject:
@@ -190,7 +195,7 @@ const TambahMateri = () => {
               value={newMateri.ParentMateriId}
               onChange={handleParentSubjectChange}
             >
-              <option value="">Select Parent Subject</option>
+              <option value="">Pilih Mata Pelajaran</option>
               {parentSubjects.map(subject => (
                 <option key={subject.Id} value={subject.Id}>
                   {subject.Name}
@@ -199,8 +204,8 @@ const TambahMateri = () => {
             </select>
           </label>
 
-          <label>
-            Material Name:
+          <label hidden>
+            Materi Name:
             <input
               type="text"
               value={newMateri.Name}
@@ -210,8 +215,8 @@ const TambahMateri = () => {
             />
           </label>
 
-          <label>
-            Material Title:
+          <label hidden>
+            Materi Title:
             <input
               type="text"
               value={newMateri.Title}
@@ -224,7 +229,7 @@ const TambahMateri = () => {
           {newMateri.subMateries.map((subMateri, index) => (
             <div className="submateri-container" key={index}>
               <label>
-                Sub Material Name:
+                Sub Materi Name:
                 <input
                   type="text"
                   name="Name"
@@ -234,7 +239,7 @@ const TambahMateri = () => {
               </label>
 
               <label>
-                Sub Material Title:
+                Sub Materi Title:
                 <input
                   type="text"
                   name="Title"
@@ -273,6 +278,11 @@ const TambahMateri = () => {
 
         {message && <p>{message}</p>}
       </div>
+
+      <br />
+      <br />
+      <br />
+      <Hapus />
     </div>
   );
 };

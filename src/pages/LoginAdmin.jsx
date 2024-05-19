@@ -25,7 +25,7 @@ const LoginAdmin = () => {
         <img className="logosekolahkarangjengkol" src={logosekolah} alt="" />
         <br />
         SELAMAT DATANG <br />
-        <span className="span1">ADMIN</span>
+        <span className="span1">Bapak & Ibu guru</span>
         <Form onSubmit={handleLogin}>
           <Form.Group className="mb-3" controlId="formUsername">
             <Form.Label>Username</Form.Label>
