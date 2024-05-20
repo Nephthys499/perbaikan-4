@@ -35,7 +35,7 @@ const HomePage = () => {
           Cookies.set("username", username);
 
           if (data.body.IsAdmin) {
-            window.location.href = "/Tambah";
+            window.location.href = "/Nilai";
             return;
           }
 
