@@ -56,10 +56,17 @@ const HomePage = () => {
       console.error("Error submitting data:", error);
     }
   };
-
+  const navigateTo = path => {
+    window.location.href = path;
+  };
   return (
     <div className="Homebage">
       <div className="box1">
+        <div className="adminButton">
+          <button className="adminGo" onClick={() => navigateTo("/LoginAdmin")}>
+            admin
+          </button>
+        </div>
         <br />
         <img className="logosekolahkarangjengkol" src={logosekolah} alt="" />
         <br />
