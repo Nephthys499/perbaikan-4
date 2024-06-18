@@ -40,11 +40,15 @@ const KuisPage = () => {
   };
 
   const handleNext = () => {
-    setCurrentQuestionIndex(prevIndex => prevIndex + 1);
+    if (currentQuestionIndex < quizData.quizQuestions.length - 1) {
+      setCurrentQuestionIndex(prevIndex => prevIndex + 1);
+    }
   };
 
   const handlePrevious = () => {
-    setCurrentQuestionIndex(prevIndex => prevIndex - 1);
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prevIndex => prevIndex - 1);
+    }
   };
 
   const handleSubmit = async event => {
@@ -162,13 +166,14 @@ const KuisPage = () => {
                     Previous
                   </button>
                 )}
-                {currentQuestionIndex === quizData.quizQuestions.length - 1 ? (
-                  <button className="quiz-submit-button" type="submit">
-                    Submit
-                  </button>
-                ) : (
+                {currentQuestionIndex < quizData.quizQuestions.length - 1 && (
                   <button type="button" onClick={handleNext}>
                     Next
+                  </button>
+                )}
+                {currentQuestionIndex === quizData.quizQuestions.length - 1 && (
+                  <button className="quiz-submit-button" type="submit">
+                    Submit
                   </button>
                 )}
               </div>
